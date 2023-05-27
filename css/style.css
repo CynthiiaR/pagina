@@ -554,11 +554,12 @@ footer {
         }
         .caja {
             width: 600px;
-            height: 890px;     
+            height: 900px;     
         }
         
         .caja p {
-            font-size: 20px;
+            font-size: 15px;
+
         }
         
 
@@ -630,6 +631,7 @@ footer {
         display: grid;
         grid-template-columns: repeat( 1, 1fr);
         grid-template-rows: auto;
+        padding: 0px;
         grid-template-areas: 
         'area4 area4'
         'area2 area2'
