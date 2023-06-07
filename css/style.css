@@ -1,660 +1,534 @@
-* {
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/*footer */
+footer {
+  background-color: #4C3D3D;
+  height: 300px;
 }
 
-body { 
-    font-family: 'spartan'; 
+.texto {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.texto p {
+  display: inline-block;
+  width: 15%;
+  color: beige;
+  font-size: 13px;
+  padding: 40px;
+  margin: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "spartan";
 }
 
 @font-face {
-    font-family: 'spartan';
-    src: url(../assets/LeagueSpartan-Bold.ttf);
+  font-family: "spartan";
+  src: url(../assets/LeagueSpartan-Bold.ttf);
 }
-
-
-
 .icono-sol {
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 h1 {
-    font-size: 57px;
-    color:#C07F00;
-    text-align: center;
-    margin: 79px;
-} 
+  font-size: 57px;
+  color: #C07F00;
+  text-align: center;
+  margin: 79px;
+}
 
 h3 {
-    text-align: center;
-    color: #C07F00;
-    margin-bottom: 30px;
-    font-size: 40px;
-
+  text-align: center;
+  color: #C07F00;
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
 /* iconos soles parrafo */
-
 .iconos {
-text-align: center;
-margin: 100px;
-
+  text-align: center;
+  margin: 100px;
 }
-
 .iconos img {
-    text-align: center;
-    object-fit: cover;
+  text-align: center;
+  object-fit: cover;
 }
 .iconos p {
-    color: #4C3D3D;
-    font-size: 20px;
-    padding: 30px 100px;
-    margin: 50px 200px;
+  color: #4C3D3D;
+  font-size: 20px;
+  padding: 30px 100px;
+  margin: 50px 200px;
 }
 
-/* nuevo */
-
-
-.lo-nuevo h1  {
-    text-align: center;
-    color: #C07F00;
-    font-size: 60px;
-    padding-top: 30px;
-}
-
-
-
-.pseudos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    max-height: 100%;
-    gap: 35px;
-    padding: 20px;
-
-}
-
-.pseudo {
-    width: 90%;
-    height: 800px;
-    background-color: #4C3D3D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #eee;
-    transition: 0.6s;    overflow: hidden;
-}
-
-
-.pseudo:first-child , .pseudo:last-child {
-    background-color: #C07F00;
-    flex-direction: row-reverse;
-}
-
-.pseudo img {
-    width: 60%;
-    height: 800px;
-    object-fit: cover;
-}
-
-.pseudo:hover img {
-    height:1300px;
-    transition: 0.6s;
-}
-
-.pseudo_container {
-    padding: 50px;
-}
-
-.pseudo:hover {
-    background-color: #f18825;
-    box-shadow: 5px 5px 20px 0px #303030;
-
-}
-
-
-/* productos */
-
-.cajas {
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-
-    }
-    .caja {
-        width: 600px;
-        height: 850px;
-    background-color: #C07F00;
-
-    
-    }
-    
-    .enlace {
-        padding: 25px;
-        text-align: center;
-    
-    }
-    .enlace a  {
-        padding: 20px;
-        color: #eee;
-        font-size: 25px;
-        text-decoration: none;
-        border: #eee solid 2px;
-    }
-    
-    .caja p {
-        padding: 20px;
-        color: #eee;
-        text-align: center;
-    
-    }
-    
-    .caja img { 
-        width: 100%;
-        height: 650px;
-        object-fit: cover;
-    
-    
-    }
-    
-    .c2 {
-        background-color: #4C3D3D;
-    }
-    
-    .c3 {
-        background-color: #C07F00;
-    }
-    
-    
-    /* parte de enmedio */
-    
-    .imagenes a {
-        color: #C07F00;
-        font-size: 20px;
-    }
-    
-    
-    
-    .hero { 
-    
-        background-color: #ebebeb;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px;
-        align-items: center;
-        justify-content: space-around;
-        }
-        
-        .hero img {
-            width: 23%;
-            height: 600px;
-            object-fit: cover;
-            flex-wrap: wrap;
-            display: flex;
-        }
-        
-        .hero-content {
-        width: 49%;
-        bottom: 10px;
-    
-        }
-        
-        .hero h2 , .hero h4 {
-            font-size: 35px;
-            text-align: justify;
-            padding: 45px 0px 15px 45px;
-            color: #C07F00;
-        }
-    
-    
-        
-        .hero p {
-            color: #4C3D3D;
-            font-size: 20px;
-            text-align: justify;
-            padding: 0px 70px 0px 50px ;
-        }
-    
-        /* grilla */
-    
-    
-        .grilla {
-            display: grid;
-            grid-template-columns: repeat( 4, 1fr);
-            grid-template-rows: repeat(3, 300px) ;
-            grid-template-areas: 
-            'area4 area4 area3 area3'
-            'area2 area2 area3 area3'
-            'area2 area2 area1 area1'
-            ;
-            gap: 15px;
-            padding: 7px 0px;
-
-    
-    }
-    
-            .grilla_hijo {
-            width: 700px;
-            height: 100%;
-            text-align: center;
-    
-        }
-    
-        .grilla_hijo img {
-            width: 700px;
-            height: 100%;
-            object-fit: cover;
-        }
-
-    
-        .g1 {
-            grid-area: area1;
-        }
-    
-        .g2 {
-            grid-area: area2;
-        }
-    
-        .g3 {
-            grid-area: area3;
-        }
-    
-        .g4 {
-            grid-area: area4;
-        }
-    
-    
-        .texto-icono {
-            width: 100%;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .icono2 img {
-            align-items: center;
-            object-fit: cover;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 50px;
-    
-        }
-        
-        .icono2 p {
-            text-align: center;
-            margin-bottom: 100px;
-            font-size: 20px;
-            color: #4C3D3D;
-        }
-    
-    
-
-
-
-
-    /*footer */
-
-    footer {
-        background-color: #4C3D3D;
-        height: 300px;
-    }
-    
-    .texto {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .texto p {
-        display: inline-block;
-        width: 15%;
-        color: beige;
-        font-size: 13px;
-        padding: 40px;
-        margin: 40px;
-    
-    }
-
-/* nosotros */
-
-.gente {
-    padding: 50px 15px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.gente h1 {
-    color: #C07F00;
-    font-size: 40px;
-}
-
-.gente img {
-    
-    width: 40%;
-    height: 222px;
-    object-fit: cover;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 7px solid #ffffff;
-}
-
-.dueños {
-    width: 30%;
-    text-align: left;
-    background-color: #FFF7D4; 
-    padding: 50px;
-    border-radius: 10px;
-    text-align: center;
-} 
-
-.dueños h2 {
-    color: #C07F00;
-    font-size: 40px;
-    padding: 20px;
-}
-
-.dueños p {
-    color: #4C3D3D;
-
-}
-
-.imagen-sol {
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-/* productos */
-
-.imagenes-tienda h1 {
-    color: #C07F00;
-    font-size: 40px;
-    padding: 40px 40px;
-}
-
-.imagenes-tienda h2 {
-    color: #C07F00;
-    font-size: 40px;
-    padding: 10px 0px 
-}
-
-.imagenes-tienda {
-    padding: 50px 23px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-
-}
-
-.imagenes img {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
-    align-items: center;
-}
-
-.imagenes {
-    display: flex;
-    flex-direction: column;
-    width: 530px;
-    text-align: left;
-    background-color: #e4e1dd;
-    padding: 30px;
-
-
-}
-
-.imagenes h1 {
-    color: #4C3D3D;
-
-}
-
-.imagenes p {
-    color: #4C3D3D;
-}
-
+/* parte de enmedio */
 .imagenes a {
-    text-decoration: none;
-    border: 2px solid #4C3D3D;
-    border-radius: 4px;
-    margin: 10px;
-    padding: 10px;
-    align-self: flex-end;
+  color: #C07F00;
+  font-size: 20px;
+}
+
+.hero {
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero img {
+  width: 23%;
+  height: 600px;
+  object-fit: cover;
+  flex-wrap: wrap;
+  display: flex;
+}
+.hero h2, .hero h4 {
+  font-size: 35px;
+  text-align: justify;
+  padding: 45px 0px 15px 45px;
+  color: #C07F00;
+}
+.hero p {
+  color: #4C3D3D;
+  font-size: 20px;
+  text-align: justify;
+  padding: 0px 70px 0px 50px;
+}
+
+.hero-content {
+  width: 49%;
+  bottom: 10px;
+}
+
+/* cajas velas */
+.cajas {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.caja {
+  width: 600px;
+  height: 850px;
+  background-color: #C07F00;
+}
+.caja p {
+  padding: 20px;
+  color: #eee;
+  text-align: center;
+}
+.caja img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.enlace {
+  padding: 25px;
+  text-align: center;
+}
+.enlace a {
+  padding: 20px;
+  color: #eee;
+  font-size: 25px;
+  text-decoration: none;
+  border: #eee solid 2px;
+}
+
+.c2 {
+  background-color: #4C3D3D;
+}
+
+.c3 {
+  background-color: #C07F00;
+}
+
+/* grilla */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas: "area4 area4 area3 area3" "area2 area2 area3 area3" "area2 area2 area1 area1";
+  gap: 15px;
+  padding: 60px;
+}
+
+.grilla_hijo {
+  width: 700px;
+  height: 100%;
+  text-align: center;
+}
+.grilla_hijo img {
+  width: 700px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.g1 {
+  grid-area: area1;
+}
+
+.g2 {
+  grid-area: area2;
+}
+
+.g3 {
+  grid-area: area3;
+}
+
+.g4 {
+  grid-area: area4;
+}
+
+.texto-icono {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icono2 img {
+  align-items: center;
+  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.icono2 img p {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: #4C3D3D;
 }
 
 /* contacto */
-
 .contacto h1 {
-    color: #C07F00;
-    font-size: 40px;
-    padding: 20px 0px 
+  color: #C07F00;
+  font-size: 40px;
+  padding: 20px 0px;
 }
 
 .row {
-    width: 100%;
-    background-color: #f8f8f8;
-    border-radius: 10px;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-radius: 10px;
 }
 
-
 .mapa {
-
-    height: 500px;
-    padding: 30px;
+  height: 500px;
+  padding: 30px;
 }
 
 .mapa iframe {
-    width: 650px;
-    height: 400px;
-    border: 1px;
-
+  width: 650px;
+  height: 400px;
+  border: 1px;
 }
 
+/* productos */
+.imagenes-tienda h1 {
+  color: #C07F00;
+  font-size: 40px;
+  padding: 40px 40px;
+}
 
+.imagenes-tienda h2 {
+  color: #C07F00;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+
+.imagenes-tienda {
+  padding: 50px 23px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.imagenes img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  align-items: center;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  text-align: left;
+  background-color: #e4e1dd;
+  padding: 30px;
+}
+
+.imagenes h1 {
+  color: #4C3D3D;
+}
+
+.imagenes p {
+  color: #4C3D3D;
+}
+
+.imagenes a {
+  text-decoration: none;
+  border: 2px solid #4C3D3D;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  align-self: flex-end;
+}
+
+/* nosotros */
+.gente {
+  padding: 50px 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gente h1 {
+  color: #C07F00;
+  font-size: 40px;
+}
+
+.gente img {
+  width: 40%;
+  height: 222px;
+  object-fit: cover;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 7px solid #ffffff;
+}
+
+.dueños {
+  width: 30%;
+  text-align: left;
+  background-color: #FFF7D4;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dueños h2 {
+  color: #C07F00;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.dueños p {
+  color: #4C3D3D;
+}
+
+.imagen-sol {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+/* nuevo */
+.lo-nuevo h1 {
+  text-align: center;
+  color: #C07F00;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.pseudos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+  gap: 35px;
+  padding: 20px;
+}
+
+.pseudo {
+  width: 90%;
+  height: 800px;
+  background-color: #4C3D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+.pseudo:first-child, .pseudo:last-child {
+  background-color: #C07F00;
+  flex-direction: row-reverse;
+}
+
+.pseudo img {
+  width: 60%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.pseudo:hover img {
+  height: 1300px;
+  transition: 0.6s;
+}
+
+.pseudo_container {
+  padding: 50px;
+}
+
+.pseudo:hover {
+  background-color: #f18825;
+  box-shadow: 5px 5px 20px 0px #303030;
+}
 
 /*mediaqueries*/
-@media only screen and (max-width:1024px) {
-
-    .cajas {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 10px;
-
-        
-        }
-        .caja {
-            width: 600px;
-            height: 890px;     
-        }
-        
-        .caja p {
-            font-size: 20px;
-        }
-        
-
-    .grilla {
-        display: grid;
-        grid-template-columns: repeat( 1, 1fr);
-        grid-template-rows: repeat(1, 300px) ;
-        grid-template-areas: 
-        'area4 area4 area4'
-        'area2 area2 area2'
-        'area3 area3 area3'
-        'area1 area1 area1'
-        ;
-}
-
-.iconos {
+@media only screen and (max-width: 1024px) {
+  .cajas {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 10px;
+  }
+  .caja {
+    width: 600px;
+    height: 890px;
+  }
+  .caja p {
+    font-size: 20px;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: "area4 area4 area4" "area2 area2 area2" "area3 area3 area3" "area1 area1 area1";
+  }
+  .iconos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .iconos img {
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
+  }
+  .iconos p {
+    color: #4C3D3D;
+    font-size: 20px;
+    padding: 30px 10px;
+    margin: 50px 50px;
+  }
 }
-        
-        .iconos img {
-            width: 100%;
-            text-align: center;
-            object-fit: cover;
-        }
-        .iconos p {
-            color: #4C3D3D;
-            font-size: 20px;
-            padding: 30px 10px;
-            margin: 50px 50px;
-        }
-
-
-}
-
-
-
-
-
 @media only screen and (max-width: 768px) {
-
-    h1 {
-        font-size: 50px;
-        text-align: center;
-        margin: 79px;
-    } 
-
-    .cajas {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 10px;
-
-        
-        }
-        .caja {
-            width: 600px;
-            height: 900px;     
-        }
-        
-        .caja p {
-            font-size: 15px;
-
-        }
-        
-
-    .hero { 
-
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px;
-        align-items: center;
-        text-align: center;
-        }
-        
-        .hero img {
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            flex-wrap: wrap;
-            display: flex;
-            padding: 10px;
-        }
-        
-        .hero-content {
-        align-items: center;
-        width: 100%;
-        bottom: 10px;
-    
-        }
-        
-        .hero h2 , .hero h4 {
-        align-items: center;
-            font-size: 35px;
-            color: #C07F00;
-        }
-    
-    
-        
-        .hero p {
-            text-align: left;
-            color: #4C3D3D;
-            font-size: 20px;
-            padding: 0px 0px 50px 50px ;
-
-        }
-
-
-        .iconos {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-                
-                .iconos img {
-                    width: 100%;
-                    text-align: center;
-                    object-fit: cover;
-                }
-
-                .iconos p {
-                    color: #4C3D3D;
-                    font-size: 20px;
-                    padding: 10px; 
-                    margin: 10px;
-                }
-        
-
-
-
-    .grilla {
-        display: grid;
-        grid-template-columns: repeat( 1, 1fr);
-        grid-template-rows: auto;
-        padding: 0px;
-        grid-template-areas: 
-        'area4 area4'
-        'area2 area2'
-        'area3 area3'
-        'area1 area1'
-        ;
-
-
-        .grilla_hijo {
-            width: 370px;
-            justify-content: center;
-
-    
-        }
-
-        .g1 img {
-            grid-area: area1;
-            width: 100%;
-            height: 600px;
-
-        }
-    
-        .g2 img {
-            grid-area: area2;
-            width: 100%;
-            height: 600px;
-        }
-    
-        .g3 img {
-            grid-area: area3;
-            width: 100%;
-            height: 600px;
-        }
-    
-        .g4 img {
-            grid-area: area4;
-            width: 100%;
-            height: 600px;
-        }
-    
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 79px;
+  }
+  .cajas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .caja {
+    width: 600px;
+    height: 900px;
+  }
+  .caja p {
+    font-size: 15px;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+  }
+  .hero-content {
+    align-items: center;
+    width: 100%;
+    bottom: 10px;
+  }
+  .hero h2, .hero h4 {
+    align-items: center;
+    font-size: 35px;
+    color: #C07F00;
+  }
+  .hero p {
+    text-align: left;
+    color: #4C3D3D;
+    font-size: 20px;
+    padding: 0px 0px 50px 50px;
+  }
+  .iconos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .iconos img {
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
+  }
+  .iconos p {
+    color: #4C3D3D;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    padding: 0px;
+    grid-template-areas: "area4 area4" "area2 area2" "area3 area3" "area1 area1";
+  }
+  .grilla .grilla_hijo {
+    width: 370px;
+    justify-content: center;
+  }
+  .grilla .g1 img {
+    grid-area: area1;
+    width: 100%;
+    height: 600px;
+  }
+  .grilla .g2 img {
+    grid-area: area2;
+    width: 100%;
+    height: 600px;
+  }
+  .grilla .g3 img {
+    grid-area: area3;
+    width: 100%;
+    height: 600px;
+  }
+  .grilla .g4 img {
+    grid-area: area4;
+    width: 100%;
+    height: 600px;
+  }
 }
 
-}
+/*# sourceMappingURL=style.css.map */

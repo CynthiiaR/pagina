@@ -1,0 +1,49 @@
+/* nosotros */
+
+.gente {
+    padding: 50px 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gente h1 {
+    color: #C07F00;
+    font-size: 40px;
+}
+
+.gente img {
+    
+    width: 40%;
+    height: 222px;
+    object-fit: cover;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 7px solid #ffffff;
+}
+
+.dueños {
+    width: 30%;
+    text-align: left;
+    background-color: #FFF7D4; 
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+} 
+
+.dueños h2 {
+    color: #C07F00;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.dueños p {
+    color: #4C3D3D;
+
+}
+
+.imagen-sol {
+    text-align: center;
+    padding-bottom: 100px;
+}

@@ -1,0 +1,22 @@
+    /*footer */
+
+    footer {
+        background-color: #4C3D3D;
+        height: 300px;
+    }
+    
+    .texto {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .texto p {
+        display: inline-block;
+        width: 15%;
+        color: beige;
+        font-size: 13px;
+        padding: 40px;
+        margin: 40px;
+    
+    }

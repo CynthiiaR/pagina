@@ -1,0 +1,197 @@
+/*mediaqueries*/
+@media only screen and (max-width:1024px) {
+
+    .cajas {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+
+        
+        }
+        .caja {
+            width: 600px;
+            height: 890px;     
+        }
+        
+        .caja p {
+            font-size: 20px;
+        }
+        
+
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: repeat(1, 300px) ;
+        grid-template-areas: 
+        'area4 area4 area4'
+        'area2 area2 area2'
+        'area3 area3 area3'
+        'area1 area1 area1'
+        ;
+}
+
+.iconos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+        
+        .iconos img {
+            width: 100%;
+            text-align: center;
+            object-fit: cover;
+        }
+        .iconos p {
+            color: #4C3D3D;
+            font-size: 20px;
+            padding: 30px 10px;
+            margin: 50px 50px;
+        }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        margin: 79px;
+    } 
+
+    .cajas {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+
+        
+        }
+        .caja {
+            width: 600px;
+            height: 900px;     
+        }
+        
+        .caja p {
+            font-size: 15px;
+
+        }
+        
+
+    .hero { 
+
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+        }
+        
+        .hero img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            flex-wrap: wrap;
+            display: flex;
+            padding: 10px;
+        }
+        
+        .hero-content {
+        align-items: center;
+        width: 100%;
+        bottom: 10px;
+    
+        }
+        
+        .hero h2 , .hero h4 {
+        align-items: center;
+            font-size: 35px;
+            color: #C07F00;
+        }
+    
+    
+        
+        .hero p {
+            text-align: left;
+            color: #4C3D3D;
+            font-size: 20px;
+            padding: 0px 0px 50px 50px ;
+
+        }
+
+
+        .iconos {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+                
+                .iconos img {
+                    width: 100%;
+                    text-align: center;
+                    object-fit: cover;
+                }
+
+                .iconos p {
+                    color: #4C3D3D;
+                    font-size: 20px;
+                    padding: 10px; 
+                    margin: 10px;
+                }
+        
+
+
+
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: auto;
+        padding: 0px;
+        grid-template-areas: 
+        'area4 area4'
+        'area2 area2'
+        'area3 area3'
+        'area1 area1'
+        ;
+
+
+        .grilla_hijo {
+            width: 370px;
+            justify-content: center;
+
+    
+        }
+
+        .g1 img {
+            grid-area: area1;
+            width: 100%;
+            height: 600px;
+
+        }
+    
+        .g2 img {
+            grid-area: area2;
+            width: 100%;
+            height: 600px;
+        }
+    
+        .g3 img {
+            grid-area: area3;
+            width: 100%;
+            height: 600px;
+        }
+    
+        .g4 img {
+            grid-area: area4;
+            width: 100%;
+            height: 600px;
+        }
+    
+}
+
+}
