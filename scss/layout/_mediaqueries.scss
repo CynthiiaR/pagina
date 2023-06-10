@@ -2,13 +2,11 @@
 @media only screen and (max-width:1024px) {
 
     .cajas {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        @extend .d-flex;
         gap: 10px;
+}
 
-        
-        }
+
         .caja {
             width: 600px;
             height: 890px;     
@@ -31,26 +29,38 @@
         ;
 }
 
-.iconos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+.cajas-dueños {
+    gap: 30px;
+
+    }
+    .dueños {
+        width: 600px;
+        height: 950px;
+
+    p {
+        padding: 5px 50px;    
+        font-size: 22px;
+    
+    }
+
+    h2 {
+
+        font-size: 55px;
+        padding: 20px;
         
-        .iconos img {
-            width: 100%;
-            text-align: center;
-            object-fit: cover;
-        }
-        .iconos p {
-            color: #4C3D3D;
-            font-size: 20px;
-            padding: 30px 10px;
-            margin: 50px 50px;
-        }
+    }
+
+    }
 
 
 }
+
+
+footer {
+    background-color: #4C3D3D;
+    height: 600px;
+}
+
 
 
 
@@ -85,17 +95,13 @@
 
     .hero { 
 
-        display: flex;
-        flex-wrap: wrap;
+        @extend .d-flex;
         padding: 30px;
-        align-items: center;
         text-align: center;
         }
         
-        .hero img {
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
+        .hero img { 
+            @include imagenes (100%,600px,cover);
             flex-wrap: wrap;
             display: flex;
             padding: 10px;
@@ -111,14 +117,12 @@
         .hero h2 , .hero h4 {
         align-items: center;
             font-size: 35px;
-            color: #C07F00;
         }
     
     
         
         .hero p {
             text-align: left;
-            color: #4C3D3D;
             font-size: 20px;
             padding: 0px 0px 50px 50px ;
 
@@ -138,7 +142,6 @@
                 }
 
                 .iconos p {
-                    color: #4C3D3D;
                     font-size: 20px;
                     padding: 10px; 
                     margin: 10px;
@@ -192,6 +195,49 @@
             height: 600px;
         }
     
+}
+
+
+.imagenes-tienda {
+    padding: 50px 23px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    .imagenes {
+        width: 96%;     
+    }
+}
+
+.cajas-dueños {
+    gap: 30px;
+
+    }
+    .dueños {
+        width: 600px;
+        height: 1130px;
+
+    p {
+        padding: 5px 50px;    
+        font-size: 16px;
+    
+    }
+
+    h2 {
+
+        font-size: 55px;
+        padding: 20px;
+        
+    }
+
+    }
+
+
+
+footer {
+    background-color: #4C3D3D;
+    height: 850px;
 }
 
 }

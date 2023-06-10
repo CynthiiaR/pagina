@@ -1,0 +1,13 @@
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin imagenes ($width, $height, $object) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}

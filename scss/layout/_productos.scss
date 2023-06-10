@@ -1,13 +1,13 @@
 /* productos */
 
 .imagenes-tienda h1 {
-    color: #C07F00;
+    color:$second-color;
     font-size: 40px;
     padding: 40px 40px;
 }
 
 .imagenes-tienda h2 {
-    color: #C07F00;
+    color: $second-color;
     font-size: 40px;
     padding: 10px 0px 
 }
@@ -19,14 +19,12 @@
     justify-content: space-around;
     gap: 20px;
 
+    .img {
+        @include imagenes (100%,700px,cover);
+        align-items: center;
+    }
 }
 
-.imagenes img {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
-    align-items: center;
-}
 
 .imagenes {
     display: flex;
@@ -40,17 +38,18 @@
 }
 
 .imagenes h1 {
-    color: #4C3D3D;
+    color: $main-color;
+
+    .p {
+        color: $main-color;
+    }
 
 }
 
-.imagenes p {
-    color: #4C3D3D;
-}
 
 .imagenes a {
     text-decoration: none;
-    border: 2px solid #4C3D3D;
+    border: 2px solid $main-color;
     border-radius: 4px;
     margin: 10px;
     padding: 10px;

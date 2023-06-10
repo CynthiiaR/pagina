@@ -1,47 +1,47 @@
 /* nosotros */
 
-.gente {
-    padding: 50px 15px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
-.gente h1 {
-    color: #C07F00;
-    font-size: 40px;
-}
-
-.gente img {
-    
-    width: 40%;
-    height: 222px;
-    object-fit: cover;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 7px solid #ffffff;
-}
-
-.dueños {
-    width: 30%;
-    text-align: left;
-    background-color: #FFF7D4; 
+.cajas-dueños {
+    gap: 30px;
     padding: 50px;
-    border-radius: 10px;
-    text-align: center;
-} 
+    @extend .d-flex;
+    justify-content: space-evenly;
 
-.dueños h2 {
-    color: #C07F00;
-    font-size: 40px;
-    padding: 20px;
-}
 
-.dueños p {
-    color: #4C3D3D;
 
-}
+    }
+    .dueños {
+        width: 600px;
+        height: 800px;
+    background-color: $second-color;
+    border-radius: 55px;
+    background-color: antiquewhite;
+
+    p {
+        color: $main-color;
+        padding: 5px 50px;    
+        text-align: center;
+    
+    }
+
+    h2 {
+        text-align: center;
+        color: #4C3D3D;
+        font-size: 60px;
+        padding: 20px;
+        
+    }
+
+    img {  
+        @include imagenes (100%,500px,cover);
+        border-radius: 55px;
+        padding: 20px;
+    }
+    }
+
+
+
+
 
 .imagen-sol {
     text-align: center;
