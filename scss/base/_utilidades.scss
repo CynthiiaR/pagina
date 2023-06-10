@@ -11,3 +11,25 @@
     height: $height;
     object-fit: $object;
 }
+
+
+@keyframes animacion  {
+    0%{  
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+100% {
+    transform: translate(0);
+    opacity: 1;
+}
+}
+
+
+@mixin animacion {
+    animation-name: animacion;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: .6s;
+    transform: translateX(0);
+}

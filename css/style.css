@@ -7,6 +7,16 @@
   align-items: center;
 }
 
+@keyframes animacion {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
 /*footer */
 footer {
   background-color: #4C3D3D;
@@ -45,6 +55,10 @@ body {
 .icono-sol {
   text-align: center;
   margin-top: 100px;
+  transition: 0.3s;
+}
+.icono-sol:hover {
+  transform: scale(1.3);
 }
 
 h1 {
@@ -52,6 +66,11 @@ h1 {
   color: #C07F00;
   text-align: center;
   margin: 79px 0;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 0.6s;
+  transform: translateX(0);
 }
 
 h3 {
@@ -140,6 +159,10 @@ h3 {
 .enlace {
   padding: 25px;
   text-align: center;
+  transition: 0.4s;
+}
+.enlace:hover {
+  transform: scale(1.2);
 }
 .enlace a {
   padding: 20px;
@@ -147,6 +170,10 @@ h3 {
   font-size: 25px;
   text-decoration: none;
   border: #ebebeb solid 2px;
+  transition: 0.4s;
+}
+.enlace a:hover {
+  transform: scale(1.2);
 }
 
 .c2 {
@@ -176,6 +203,10 @@ h3 {
   width: 700px;
   height: 100%;
   object-fit: cover;
+  transition: 0.4s;
+}
+.grilla_hijo img:hover {
+  transform: scale(1.2);
 }
 
 .g1 {

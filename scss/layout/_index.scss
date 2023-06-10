@@ -16,13 +16,23 @@ body {
 .icono-sol {
     text-align: center;
     margin-top: 100px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.3);
+
+
+    }
 }
+    
 
 h1 {
     font-size: 57px;
-    color:$second-color;
+    color: $second-color;
     text-align: center;
     margin: 79px 0;
+    @include animacion; 
+
 
     
 } 
@@ -145,15 +155,26 @@ p {
             }
 
             img {  
-                @include imagenes (100%,650px,cover);
+                @include imagenes (100%,650px,cover); 
+
             }
+
+
             }
+
 
 
             
             .enlace {
                 padding: 25px;
                 text-align: center;
+                transition: 0.4s;
+
+                &:hover {
+                    transform: scale(1.2);
+    
+    
+                }
             
             a  {
                     padding: 20px;
@@ -161,6 +182,13 @@ p {
                     font-size: 25px;
                     text-decoration: none;
                     border:$light-color solid 2px;
+                    transition: 0.4s;
+
+                    &:hover {
+                        transform: scale(1.2);
+        
+        
+                    }
                 }
             }
             
@@ -200,6 +228,13 @@ p {
                 
         img {
             @include imagenes (700px,100%,cover);
+            transition: 0.4s;
+
+            &:hover {
+                transform: scale(1.2);
+
+
+            }
         }
         }
 
