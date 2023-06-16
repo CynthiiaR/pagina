@@ -52,18 +52,17 @@ h3 {
     margin: 100px 0;
 @extend .d-flex;
 
-
-
-img {
+.iconos img {
+    @include imagenes (none,150px,cover);
     @extend .d-flex;
-    object-fit: cover;
 
 }
 
 p {
     color: $main-color;
-    font-size: 20px;
-    padding: 30px 100px;
+    font-size: 18px;
+    margin: 20px;
+    padding: 30px 150px;
     text-align: center;
 }
 
@@ -201,81 +200,96 @@ p {
             .c3 {
                 background-color: $second-color;
             }
+
+
+
+
+
+        
         
 /* grilla */
     
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    'area4 area4 area3 area3'
+    'area2 area2 area3 area3'
+    'area2 area2 area1 area1'
     
-        .grilla {
-            display: grid;
-            grid-template-columns: repeat( 4, 1fr);
-            grid-template-rows: repeat(3, 300px) ;
-            grid-template-areas: 
-            'area4 area4 area3 area3'
-            'area2 area2 area3 area3'
-            'area2 area2 area1 area1'
-            ;
-            gap: 15px;
-            padding: 60px;
+    ;
+    gap: 5px;
+    padding: 40px;
+    justify-items: center;
 
+    @if $condicion == noche {
+        background-color:  #4C3D3D;
+        
+        &.hero p {
+            color: #ebebeb;
+        }
+    
+    } @else if $condicion == dia {
+        background-color: #ebebeb;
+        &.hero p {
+            color: #4C3D3D;
+        }
     
     }
-    
-            .grilla_hijo {
-            width: 700px;
-            height: 100%;
-            text-align: center;
-    
-                
-        img {
-            @include imagenes (700px,100%,cover);
-            transition: 0.4s;
 
-            &:hover {
-                transform: scale(1.2);
+}
+
+.grilla__hijo {
+    width: 95%;
+    height: 95%;
+    background-color: #4C3D3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        @include imagenes (855px,100%,cover);
+        transition: 0.4s;
+        align-items: center;
+    
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+}
 
 
-            }
-        }
-        }
+.g1 {
+    grid-area: area1;
+}
 
-    
-        .g1 {
-            grid-area: area1;
-        }
-    
-        .g2 {
-            grid-area: area2;
-        }
-    
-        .g3 {
-            grid-area: area3;
-        }
-    
-        .g4 {
-            grid-area: area4;
-        }
-    
-    
+.g2 {
+    grid-area: area2;
+}
+
+.g3 {
+    grid-area: area3;
+}
+
+.g4 {
+    grid-area: area4;
+}
+
+        
         .texto-icono {
             width: 100%;
             flex-direction: column;
             @extend .d-flex;
-        }
 
-
-        .icono2 img {
-            @extend .d-flex;
-            object-fit: cover;
-
-            padding: 50px;
-
-            p {
-                text-align: center;
-                margin-bottom: 100px;
-                font-size: 20px;
-                color: $main-color;
+            .icono2 img {
+                @extend .d-flex;
+                object-fit: cover;
+                padding: 30px;
             }
         }
+
         
 
 
